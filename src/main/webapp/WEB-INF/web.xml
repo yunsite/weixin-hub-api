@@ -1,0 +1,42 @@
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <display-name>WeiXin HUB Test</display-name>
+
+  	
+	<servlet>
+		<servlet-name>RegAccount</servlet-name>
+		<servlet-class>wxhub.web.RegAccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegAccount</servlet-name>
+		<url-pattern>/regacct</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SingleSend</servlet-name>
+		<servlet-class>wxhub.web.SingleSendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SingleSend</servlet-name>
+		<url-pattern>/singlesend</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MassSend</servlet-name>
+		<servlet-class>wxhub.web.MassSendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MassSend</servlet-name>
+		<url-pattern>/masssend</url-pattern>
+	</servlet-mapping>
+  	
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+
+</web-app>
